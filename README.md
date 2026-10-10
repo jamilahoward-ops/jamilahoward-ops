@@ -9,15 +9,16 @@
 ## AI evaluation & agent QA
 Most of my build time goes into making agents verifiably right, not just running:
 - **Rubrics + specs:** every agent has a versioned spec with acceptance criteria and JSON input/output schemas.
-- **LLM test runbooks:** structured test passes for each agent before lock, recording failures and fixes.
+- **LLM test runbooks:** a written test protocol for every agent: inputs, expected verdicts, and pass criteria.
 - **Cross-spec consistency reviews:** audits across agents to catch contract drift between pipeline stages.
-- **QC preflight agent:** an automated reviewer that checks every output against brand and technical rubrics before release.
+- **Offline contract validation:** 9 validator suites, 557 checks, including 273 that confirm deliberately broken outputs are rejected.
+- **Self-audit:** a technical report that documents where the system's own evaluation is still incomplete.
 - **Daily code review of AI coding agents:** I direct Claude Code across real multi-service projects and review, correct, and ship what it writes.
 
 ## Selected work
 
 ### 🎬 [Agentic Reel Studio](https://github.com/jamilahoward-ops/agentic-reel-studio) — 17-agent AI video production pipeline
-Designed to replace a full reel production team with a chain of specialized agents: strategy → brief → script → storyboard → production coordination → AI video generation → style replication → QC preflight. Every agent has a versioned spec, JSON input/output schemas, and an LLM test runbook. 10 agents locked and production render recipe approved June 2026, fed by an 11-profile brand voice + visual system I built.
+Designed to replace a full reel production team with a chain of specialized agents: strategy → brief → script → storyboard → production coordination → AI video generation → style replication → QC preflight. Every agent has a versioned spec, JSON Schema input/output contracts, and an LLM test runbook, backed by 557 automated validation checks.
 
 ### 🗣️ [The Office](https://github.com/jamilahoward-ops/the-office) — 12-agent voice room
 A room of twelve AI executives with faces and voices. Talk out loud, call on someone by name, or let the chief of staff route it. Notion is the source of truth: agents read the live operating map and action tracker before every turn, and hand off real actions as exact Claude Code commands.
@@ -37,12 +38,6 @@ Ran operations and systems for a multi-location luxury beauty and wellness group
 - Mapped and built the automation layer across Outlook, Trello, GoHighLevel, Marblism, and Stripe, all feeding Notion.
 - Got a previously rejected A2P 10DLC SMS registration through review with full compliance scores.
 - Stood up a single software register (owner, cost, billing) and handed off a clean footprint of 7 server-side automations.
-
-### More builds
-- **SALT HOUSE** — members-only hire + barter directory for Black women; Stripe tiers, referral-only signup (Lovable).
-- **Ride to the Polls** — AI receptionist line that routes callers by ZIP code to a network of ~14 pastors for rides.
-- **Sequel Digital** — my digital strategy, marketing, and AI products agency.
-- **AI radio pilot** — AI-hosted gospel radio segment with FCC/compliance research and a human-approval workflow.
 
 ---
 
