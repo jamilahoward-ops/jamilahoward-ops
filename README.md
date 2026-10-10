@@ -12,8 +12,11 @@ Most of my build time goes into making agents verifiably right, not just running
 - **LLM test runbooks:** a written test protocol for every agent: inputs, expected verdicts, and pass criteria.
 - **Cross-spec consistency reviews:** audits across agents to catch contract drift between pipeline stages.
 - **Offline contract validation:** 9 validator suites, 557 checks, including 273 that confirm deliberately broken outputs are rejected.
-- **Self-audit:** a technical report that documents where the system's own evaluation is still incomplete.
+- **Self-audit:** published a [technical report](https://doi.org/10.5281/zenodo.23272164) that documents where the system's own evaluation is still incomplete.
 - **Daily code review of AI coding agents:** I direct Claude Code across real multi-service projects and review, correct, and ship what it writes.
+
+## Publications
+- Howard, J. (2026). *Specification-First Design of a Multi-Agent Short-Form Video Production Pipeline: Typed Stage Contracts, Offline Contract Validation, and an Audit of Evaluation Gaps.* Zenodo. [doi:10.5281/zenodo.23272164](https://doi.org/10.5281/zenodo.23272164)
 
 ## Selected work
 
